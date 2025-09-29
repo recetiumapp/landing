@@ -186,6 +186,7 @@ body {
 
 .img_desktop {
   display: block;
+  width: 50%;
 }
 
 .img_desktop_allies {
@@ -346,6 +347,19 @@ body {
   text-decoration: none;
   background-color: var(--rct-transparent); 
   transition: background-color 0.3s;
+}
+
+.btn__download 
+{
+  padding: 10px 30px;
+  border-radius: 25px;
+  width: 150px;
+  color: var(--rct-gray-dark);
+  border: 1.5px solid var(--rct-gray-dark);
+  text-decoration: none;
+  background-color: var(--rct-green-main); 
+  transition: background-color 0.3s;
+  text-align: center;
 }
 
 .banner__btn2 {
@@ -697,7 +711,7 @@ body {
 .howto__container h2 {
   width: 75%;
   margin-inline: auto;
-  margin-bottom: 2.5rem;
+  margin-bottom: .5rem;
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
@@ -705,16 +719,43 @@ body {
 }
 
 .howto__container h4 {
-  margin-bottom: .5rem;
+  margin-bottom: 2rem;
   font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
   color: var(--rct-gray-dark);
 }
 
-.howto__img {
-  width: 80%;
+/* Sección de Descarga de la App */
+.download-section {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  /* min-height: 400px;  */
+  gap: 130px;
 }
+
+.download-section .howto__img {
+  text-align: center;
+}
+
+.download-section .howto__img img {
+  width: 100%; 
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* .download-section .btn__download {
+  align-self: center; 
+  padding: 10px 30px;
+  border-radius: 25px;
+  color: var(--rct-gray-dark);
+  border: 1.5px solid var(--rct-gray-dark);
+  text-decoration: none;
+  background-color: var(--rct-transparent); 
+  transition: background-color 0.3s;
+} */
 
 /* FAQ */
 .faq__container {
